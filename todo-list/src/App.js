@@ -1,17 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import Body from './components/body';
+import Navbar from './components/nav';
+import Right from './components/right';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          You are in Abhishek's Domain....
-        </p>
-       
-      </header>
-    </div>
+    <>
+      <Navbar/>
+      <Body/>
+      <Right/>
+    </>
   );
 }
 

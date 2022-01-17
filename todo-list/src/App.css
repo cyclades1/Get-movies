@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+.Right-banner {
+  float:  right;
+}
+.body {
+  float:  left;
+  width: 60%;
+}
