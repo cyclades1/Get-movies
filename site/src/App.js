@@ -4,10 +4,12 @@ import Navbar from './components/nav';
 import Right from './components/right';
 
 function App() {
+  let pathname = window.location.pathname;
+  console.log(pathname)
   return (
     <>
-      <Navbar/>
-      <Body/>
+      <Navbar showdropdown ={false}/>
+      <Body pageid ={pathname}/>
       <Right/>
     </>
   );
