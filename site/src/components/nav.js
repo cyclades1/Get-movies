@@ -1,5 +1,6 @@
 import '../App.css';
 import {Nav, NavDropdown} from 'react-bootstrap';
+import {Link} from "react-router-dom";
 
 function changeurl(url)
 {
@@ -14,14 +15,10 @@ function Navbar(props) {
       <>
        <Nav variant="pills" >
         <Nav.Item>
-            <Nav.Link eventKey="home" onClick={()=>{props.clicknav("home")}} >
-                Home
-            </Nav.Link>
+            <Nav.Link as={Link} to="/" > Home </Nav.Link>
         </Nav.Item>
         <Nav.Item>
-            <Nav.Link eventKey="doc" onClick={()=>{props.clicknav("doc")}} >
-                Documentation
-            </Nav.Link>
+            <Nav.Link  as={Link} to="/doc"> Documentation </Nav.Link>
         </Nav.Item>
         <Nav.Item>
             <Nav.Link eventKey="user" disabled onClick={() => changeurl("doc")}>

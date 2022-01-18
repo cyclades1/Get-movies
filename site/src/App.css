@@ -44,3 +44,15 @@
   float:  left;
   width: 60%;
 }
+
+.doc {
+  float:  left;
+  width: 60%;
+}
+
+.footerlow {
+  position:absolute;
+  top: 89vh;
+  width: 100%;
+  text-align: center;
+}
