@@ -7,20 +7,19 @@ function changeurl(url)
 }
 
 function Navbar(props) {
-    // const handleSelect = (eventKey) =>  ${eventKey};
-    console.log(props.showdropdown);
+
 
   return (
     //   <h1>nav</h1>
       <>
        <Nav variant="pills" >
         <Nav.Item>
-            <Nav.Link eventKey="home" href="home">
+            <Nav.Link eventKey="home" onClick={()=>{props.clicknav("home")}} >
                 Home
             </Nav.Link>
         </Nav.Item>
         <Nav.Item>
-            <Nav.Link eventKey="doc" title="Item" href ="doc">
+            <Nav.Link eventKey="doc" onClick={()=>{props.clicknav("doc")}} >
                 Documentation
             </Nav.Link>
         </Nav.Item>

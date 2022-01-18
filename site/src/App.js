@@ -2,14 +2,19 @@ import './App.css';
 import Body from './components/body';
 import Navbar from './components/nav';
 import Right from './components/right';
+import React, { useState } from 'react';
 
 function App() {
-  let pathname = window.location.pathname;
-  console.log(pathname)
+  const clicknav = (newpath)=>{
+    console.log(newpath);
+    setpage(newpath);
+  }
+
+  const [page, setpage] = useState("home");
   return (
     <>
-      <Navbar showdropdown ={false}/>
-      <Body pageid ={pathname}/>
+      <Navbar showdropdown ={false} clicknav = {clicknav}/>
+      <Body pageid ={page}/>
       <Right/>
     </>
   );
