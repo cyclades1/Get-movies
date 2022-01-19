@@ -4,6 +4,7 @@ import Navbar from './components/nav';
 import Right from './components/right';
 import {Doc} from './components/doc';
 import {Footer} from './components/footer';
+import {GetMovie} from './components/getmovie';
 
 import React, { useState } from 'react';
 import {
@@ -26,8 +27,8 @@ function App() {
         <Navbar showdropdown ={false}/>
         <Routes>
           <Route exact path="/"  element = {<Body changepage={changepage} pageid ={page}/> }/>
-
           <Route exact path ="/doc" element = {<Doc/>} />
+          <Route exact path ="/movie/:movie_id" element = {<GetMovie/>} />
         </Routes>
         
         <Right/>

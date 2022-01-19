@@ -19,3 +19,10 @@ export const Bio = (props) => {
 }
 
 
+export const Help = (props) => {
+    return (
+        <>
+        <h4>Help here</h4>
+        </>
+    )
+}
