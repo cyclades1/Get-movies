@@ -1,28 +1,41 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../App.css';
 import {useParams} from 'react-router-dom';
+import { Movie } from './movie';
+import { useEffect } from 'react'
 
 const apikey = "eb7f19c3";
 const url = "http://www.omdbapi.com/?";
-var respose = "";
 
-const fetchAndLog = async (url) => {
-    const response = await fetch(url);
-    const json = await response.json();
-    respose = json;
-}
 
 export const GetMovie = () => {
+    const [movie , setmovie] = useState('');
     const params = useParams()
-    var req_url = url + `apikey=${apikey}&i=${params.movie_id}`;
-    fetchAndLog(req_url);
-    console.log(respose);
+    var req_url = [url + `apikey=${apikey}&i=${params.movie_id}`];
+
+    useEffect(() => {
+        Promise.all(req_url.map((request) => {
+            return fetch(request).then((response) => {
+                return response.json();
+            }).then((data) => {
+                return data;
+            });
+        })).then((values) => {
+            setmovie(values[0]);
+        }).catch(console.error.bind(console));
+        
+
+        
+    }, [params])
+    console.log(movie)
     return (
         <>
-        <div className='doc'>
-            <h4> Get Movie {params.movie_id}</h4>
-        </div>
+            <div className='body'>
+                <Movie details = {movie}/>
+            </div>
+           
         </>
        
     )
+    return null
 }
