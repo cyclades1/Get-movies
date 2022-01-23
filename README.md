@@ -2,6 +2,8 @@
 Repo for React related practices
 
 
-# Screenshots
+# Video demo
 
-[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://github.com/cyclades1/react-practice/tree/main/Readmecontent/demovideo.mp4)
+
+https://user-images.githubusercontent.com/42466362/150680483-e9eb1396-f106-4cf6-b55f-21a87c20da66.mp4
+
