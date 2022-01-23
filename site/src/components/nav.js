@@ -10,7 +10,7 @@ function Navbar(props) {
       <>
        <Nav variant="pills" >
         <Nav.Item>
-            <Nav.Link as={Link} to="/" > Home </Nav.Link>
+            <Nav.Link as={Link} to="/" > Movies </Nav.Link>
         </Nav.Item>
         <Nav.Item>
             <Nav.Link as={Link} to="/doc"> Documentation </Nav.Link>

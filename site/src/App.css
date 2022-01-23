@@ -42,17 +42,44 @@
 }
 .body {
   float:  left;
-  width: 60%;
+  width: 100%;
 }
+
 
 .doc {
   float:  left;
-  width: 60%;
+  width: 70%;
 }
 
 .footerlow {
-  position:absolute;
-  top: 89vh;
   width: 100%;
   text-align: center;
+
+}
+
+.GenreBtn{
+  display: flex;
+  flex-wrap: wrap;
+}
+.btn {
+  padding: 2px;
+  flex: 8%;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  flex: content;
+  margin: 2%;
+  
+}
+
+.cardImage{
+  height: 480px;
+  width: 360px;
+  align-items: center;
+  align-self: center;
 }
