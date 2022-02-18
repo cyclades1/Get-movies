@@ -1,7 +1,7 @@
 
 import '../App.css';
 import React from "react";
-import { Footer } from './footer';
+// import { Footer } from './footer';
 
 export const Movie = (props) => {
     var details = props.details;
@@ -11,7 +11,7 @@ export const Movie = (props) => {
             <div className='card' >
                 <h4> {details.Title}</h4>
                 <h3>{details.Year}</h3>
-                <img className='cardImage' src={details.Poster}></img>
+                <img alt = "movieposter" className='cardImage' src={details.Poster}></img>
                 <div>
                     <ul>
                         <li>Director: {details.Director}</li>
@@ -37,7 +37,7 @@ export const Movie = (props) => {
             </p>
             <br/>
             </div>
-           <Footer/>
+           {/* <Footer/> */}
         </>
        
     )

@@ -9,7 +9,7 @@ export const MovieCard = (props) => {
     return (
         <>    
             <div className='card'>
-            <img className='cardImage' variant="top" src={movie.Poster} />
+            <img alt="movieposter" className='cardImage' variant="top" src={movie.Poster} />
             <Card.Body>
                 <Card.Title>{movie.Title} ({movie.Year})</Card.Title>
                 <Card.Text>

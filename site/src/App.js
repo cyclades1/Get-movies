@@ -26,7 +26,7 @@ function App() {
         </Routes>
         
         {/* <Right/> */}
-        {/* <Footer/> */}
+        <Footer/>
 
       </Router>
       
