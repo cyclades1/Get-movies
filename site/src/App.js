@@ -2,7 +2,7 @@ import './App.css';
 import Body from './components/body';
 import Navbar from './components/nav';
 import {Doc} from './components/doc';
-import {Footer} from './components/footer';
+// import {Footer} from './components/footer';
 import {GetMovie} from './components/getmovie';
 
 import React from 'react';
@@ -26,7 +26,7 @@ function App() {
         </Routes>
         
         {/* <Right/> */}
-        <Footer/>
+        {/* <Footer/> */}
 
       </Router>
       
