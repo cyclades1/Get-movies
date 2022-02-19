@@ -1,5 +1,5 @@
 export const apikey = "eb7f19c3";
-export const url = "http://www.omdbapi.com/?";
+export const url = "https://www.omdbapi.com/?";
 export const options= [
     ["home", "Popular"], 
     ["action", "Action"],
