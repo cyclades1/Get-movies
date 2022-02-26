@@ -1,9 +1,10 @@
 import './App.css';
-import Body from './components/body';
+import {Movies, Series} from './components/body';
 import Navbar from './components/nav';
-import {Doc} from './components/doc';
+import {Search} from './components/search';
 // import {Footer} from './components/footer';
-import {GetMovie} from './components/getmovie';
+import {GetMovie, GetSeries} from './components/getdata'
+
 
 import React from 'react';
 import {
@@ -18,15 +19,14 @@ function App() {
     <>
       <Router>
 
-        <Navbar showdropdown ={false}/>
+        <Navbar/>
         <Routes>
-          <Route exact path="/"  element = {<Body/> }/>
-          <Route exact path ="/doc" element = {<Doc/>} />
+          <Route exact path="/"  element = {<Movies/> }/>
+          <Route exact path ="/search" element = {<Search/>} />
+          <Route exact path ="/series" element = {<Series/>} />
           <Route exact path ="/movie/:movie_id" element = {<GetMovie/>} />
+          <Route exact path ="/series/:series_id" element = {<GetSeries/>} />
         </Routes>
-        
-        {/* <Right/> */}
-        {/* <Footer/> */}
 
       </Router>
       

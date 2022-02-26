@@ -1,15 +1,12 @@
 import React from 'react';
-import { MovieCard } from './moviecard';
+import { MovieCard, SeriesCard } from './card';
 
 export const MoviePage = (props) => {
 
     var m = props.response.Search || [];
     var movies = m.filter((movie)=> movie.Poster!=="N/A" )
-        .filter((movie)=> parseInt(movie.Year)>=1990)
+        .filter((movie)=> parseInt(movie.Year)>=1980)
         .filter((movie)=> movie.Type=== "movie")
-        .sort(function(a, b) { 
-        return -(parseInt(a.Year) - parseInt(b.Year));
-    })
     return (
         <>
         <div className='cards'>
@@ -21,11 +18,20 @@ export const MoviePage = (props) => {
     )
 }
 
-export const Home = (props) => {
+export const SeriesPage = (props) => {
+
+    var m = props.response.Search || [];
+    var movies = m.filter((movie)=> movie.Poster!=="N/A" )
+        .filter((movie)=> parseInt(movie.Year)>=1980)
+        .filter((movie)=> movie.Type=== "series")
     return (
         <>
-        <h4>Home Page</h4>
+        <div className='cards'>
+            {movies.map((movie, index)=><SeriesCard key ={index} movie = {movie}/>)}
+        </div>
+       
         </>
+        
     )
 }
 

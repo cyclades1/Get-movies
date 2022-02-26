@@ -24,3 +24,27 @@ export const MovieCard = (props) => {
         
     )
 }
+
+
+
+export const SeriesCard = (props) => {
+    var movie = props.movie;
+    var tourl = `/series/${movie.imdbID}`
+    return (
+        <>    
+            <div className='card'>
+            <img alt="seriesposter" className='cardImage' variant="top" src={movie.Poster} />
+            <Card.Body>
+                <Card.Title>{movie.Title} ({movie.Year})</Card.Title>
+                <Card.Text>
+                <p>{movie.Type}</p>
+                </Card.Text>
+                <Button as={Link}  to={tourl}>Get More Information</Button>
+            </Card.Body>
+            </div>      
+
+            
+        </>
+        
+    )
+}

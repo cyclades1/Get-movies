@@ -10,16 +10,41 @@ export const options= [
     ["scifi", "SciFi"],
     ["thriller", "Thriller"]
 ];
-
-export const movielist = {
+export const serieslist = {
     action:[
-        "Mission Impossible"
+        "Game+of+Thrones"
     ],
     animation:[
-        "Toy Story"
+        "Attack+on+Titan"
     ],
     comedy:[
-        "The Hangover"
+        "The+Office"
+    ],
+    drama: [
+        "The+Walking+Dead"
+    ],
+    horror:[
+        "The+Haunting+of+Hill+House"
+    ],
+    scifi:[
+        "Black+Mirror"
+    ],
+    thriller:[
+        "Blue+Bloods"
+    ],
+    home:[
+        "breaking+bad"
+    ]
+}
+export const movielist = {
+    action:[
+        "Mission+Impossible"
+    ],
+    animation:[
+        "Toy+Story"
+    ],
+    comedy:[
+        "The+Hangover"
     ],
     drama: [
         "1917"
@@ -31,9 +56,9 @@ export const movielist = {
         "Avengers"
     ],
     thriller:[
-        "The Shutter Island"
+        "The+Shutter+Island"
     ],
     home:[
-        "Star wars"
+        "Star+wars"
     ]
 }
