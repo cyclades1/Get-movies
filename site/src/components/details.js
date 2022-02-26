@@ -5,6 +5,9 @@ import React from "react";
 
 export const Movie = (props) => {
     var details = props.details;
+    if(details.Poster=="N/A"){
+        details.Poster = "https://www.reelviews.net/resources/img/default_poster.jpg";
+    }
     
     return (
         <>
@@ -49,6 +52,9 @@ export const Movie = (props) => {
 
 export const Series = (props) => {
     var details = props.details;
+    if(details.Poster=="N/A"){
+        details.Poster = "https://www.reelviews.net/resources/img/default_poster.jpg";
+    }
     
     return (
         <>
