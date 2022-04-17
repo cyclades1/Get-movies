@@ -1,4 +1,4 @@
-# react-practice
+# Get-Movies
 Repo for React related practices
 
 
