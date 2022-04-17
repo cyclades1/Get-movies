@@ -1,5 +1,5 @@
 # Get-Movies
-Repo for React related practices
+project to get movie info
 
 
 # Video demo
