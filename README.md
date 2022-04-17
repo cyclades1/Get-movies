@@ -1,5 +1,5 @@
 # Get-Movies
-project to get movie info
+project to get movie information.
 
 
 # Video demo
